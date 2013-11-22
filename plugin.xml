@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+           id="com.jamiestarke.cordovadebug"
+      version="1.0.0">
+    <name>WebView Debug</name>
+    <description>Enables debugging of WebViews withing Android for Cordova Apps</description>
+    <license>Apache 2.0 License</license>
+    <keywords>cordova,debug,webview</keywords>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="WebViewDebug" >
+                <param name="android-package" value="com.jamiestarke.webviewdebug.WebViewDebug"/>
+                <param name="onload" value="true" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/WebViewDebug.java" target-dir="src/com/jamiestarke/webviewdebug" />
+    </platform>
+</plugin>
