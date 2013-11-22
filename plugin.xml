@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
-           id="com.jamiestarke.cordovadebug"
+           id="com.jamiestarke.webviewdebug"
       version="1.0.0">
     <name>WebView Debug</name>
     <description>Enables debugging of WebViews withing Android for Cordova Apps</description>
