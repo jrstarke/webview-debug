@@ -29,6 +29,15 @@ instead of using `18` use `19`.
 
     cordova plugin remove com.jamiestarke.webviewdebug
 
+## To Debug WebViews ##
+
+Make sure that you have [adb installed](https://developers.google.com/chrome-developer-tools/docs/remote-debugging#install-adbplugin),
+and that [USB debugging is enabled on your device](https://developers.google.com/chrome-developer-tools/docs/remote-debugging#enable-usb-debugging).
+
+1. Connect your device to your computer using a USB cable.
+2. In your Chrome 30+ browser, open the url **about:inspect**.
+3. Find the application you would like to debug in the list, and click the `inspect` link.
+
 ## Licence ##
 
 Copyright 2013 Jamie Starke
