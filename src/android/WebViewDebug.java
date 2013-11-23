@@ -1,4 +1,4 @@
-package com.jamiestarke.cordovadebug;
+package com.jamiestarke.webviewdebug;
 
 import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaWebView;
