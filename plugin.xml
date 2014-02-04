@@ -2,11 +2,15 @@
 
 <plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
            id="com.jamiestarke.webviewdebug"
-      version="1.0.4">
+      version="1.0.5">
     <name>WebView Debug</name>
     <description>Enables debugging of WebViews within Android for Cordova Apps</description>
     <license>Apache 2.0</license>
     <keywords>cordova,debug,webview</keywords>
+
+	<engines>
+    	<engine name="cordova-android" version=">=3.2.0" />
+	</engines>
 
     <!-- android -->
     <platform name="android">
