@@ -1,5 +1,7 @@
-# WebViewDebug Android Plugin for Cordova 3.X #
+# WebViewDebug Android Plugin for Cordova 3.2 #
 By Jamie Starke
+
+Please note that as of Cordova 3.3.0, this functionality is supported directly by Cordova, and this plugin is not required.
 
 ## Why do you want this? ##
 As of Android 4.4, Google has enabled some amazing new functionality, [Debugging Android WebViews](https://developers.google.com/chrome-developer-tools/docs/remote-debugging#debugging-webviews).
