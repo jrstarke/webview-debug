@@ -4,6 +4,7 @@ import org.apache.cordova.CordovaInterface;
 import org.apache.cordova.CordovaWebView;
 import org.apache.cordova.CordovaPlugin;
 
+import android.content.pm.ApplicationInfo;
 import android.os.Build;
 import android.webkit.WebView;
 
@@ -30,7 +31,7 @@ public class WebViewDebug extends CordovaPlugin
         
         Log.v(TAG, "Checking SDK Version: " + Build.VERSION.SDK_INT);
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
-        	if ( 0 != ( getApplicationInfo().flags &= ApplicationInfo.FLAG_DEBUGGABLE ) ) {
+        	if ( 0 != (cordova.getActivity().getApplication().getApplicationInfo().flags &= ApplicationInfo.FLAG_DEBUGGABLE ) ) {
         		Log.v(TAG, "Attempting to enable WebView.setWebContentsDebuggingEnabled");
         		
         		WebView.setWebContentsDebuggingEnabled(true);
